@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="number"></input></td>
+                <td>
+                    <select>
+                        <option value="VietNam">VietNam</option>
+                        <option value="America">America</option>
+                    </select>
+                </td>
+                <td>
+                    <select>
+                        <option value="USD">USD</option>
+                        <option value="USD">VND</option>
+                    </select>
+                </td>
+                <td>
+                    <button type="button" onclick="convert()">convert</button>
+                </td>
+            </tr>
+            <tr>
+                <td>result: <input type="text" id="result"></td>
+                <td>VND</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+    </form>
+</body>
+
+</html>
+<script>
+    function convert() {
+        var tien = Number(document.getElementById('number').value);
+        console.log(tien);
+        var chuyendoi = 23000/tien;
+        console.log(chuyendoi);
+        document.getElementById('result').value = chuyendoi;
+    }
+</script>
