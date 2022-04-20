@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="number1">;
+    <input class="number2">;
+    <button onclick="cong()">Addition</button>;
+    <button onclick="tru()">Subtraction</button>;
+    <button onclick="nhan()">Multiplication</button>;
+    <button onclick="chia()">Division</button>;
+    <p>Result</p>
+    <p id="ketqua1"></p>
+    <script>
+        function cong() {
+            let number_1 = parseInt(document.querySelector('.number1').value);
+            let number_2 = parseInt(document.querySelector('.number2').value);
+            let tong = number_1 + number_2;
+            document.getElementById('ketqua1').innerHTML = tong;
+        }
+        function tru() {
+            let number_1 = parseInt(document.querySelector('.number1').value);
+            let number_2 = parseInt(document.querySelector('.number2').value);
+            let hieu = number_1 - number_2;
+            document.getElementById('ketqua1').innerHTML = hieu;
+        }
+        function nhan() {
+            let number_1 = parseInt(document.querySelector('.number1').value);
+            let number_2 = parseInt(document.querySelector('.number2').value);
+            let tich = number_1 * number_2;
+            document.getElementById('ketqua1').innerHTML = tich;
+        }
+        function chia() {
+            let number_1 = parseInt(document.querySelector('.number1').value);
+            let number_2 = parseInt(document.querySelector('.number2').value);
+            let thuong = number_1 / number_2;
+            document.getElementById('ketqua1').innerHTML = thuong;
+        }
+
+
+    </script>
+</body>
+</html>
