@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrNumber= [];
+        let number =1;
+        do {
+            number = parseInt(prompt("Please type a number"));
+            checkPrime(number)
+            document.write(arrNumber)
+        } while  (arrNumber.length<20)
+        
+        function checkPrime(num) {
+            let result = true;
+            let n = Math.floor(num/2); // ket qua lam tron 
+        
+            if ( num <=3 ){
+             result = true;
+             arrNumber.push(num)
+         } else{
+             for (let i=2; i<n; i++){
+                 if (num%i==0){
+                     result=false;
+                 }
+                 arrNumber.push(num)
+             }
+         }
+         return result;
+        }
+ </script>
+</body>
+</html>
