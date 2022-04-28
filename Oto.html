@@ -13,8 +13,12 @@
         <label for="productName">Product name</label>
         <input type="text" class="form-control" id="productName" name="productName" onkeydown="pressEnter(event)">
         <button class="btn" onclick="createProduct()">Create</button>
-        </div>
-        <div class="row">
+         </div>
+        <div class="row" style="display:flex">
+            <label for="keyword" style="width:60px;">Seach</label>
+            <input type="Search" style="flex-grow:1;" id="keyword" class="form-control" oninput="search(event)">
+            </div>
+         <div class="row">
             <table class="table"> 
         <thead>
               <tr>
@@ -42,6 +46,7 @@
     </div>
 </div>
 <script src="Oto.js"></script>
+
     
 
            
